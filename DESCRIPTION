@@ -37,7 +37,6 @@ Enhances:
     e1071,
     earth,
     ff,
-    ffbase,
     gam (>= 1.15),
     gee,
     glmnet,
@@ -64,4 +63,4 @@ Enhances:
     VGAM
 ByteCompile: true
 Encoding: UTF-8
-RoxygenNote: 7.0.2
+RoxygenNote: 7.3.1
