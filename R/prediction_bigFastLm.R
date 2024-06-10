@@ -1,5 +1,5 @@
-# @rdname prediction
-# @export
+#' @rdname prediction
+#' @export
 prediction.bigLm <- 
 function(model, 
          data = NULL,

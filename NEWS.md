@@ -1,3 +1,8 @@
+## prediction 0.3.18
+
+* under new maintainership
+* various cosmetic/CRAN check updates
+
 ## prediction 0.3.15
 
 * `build_datalist()` now works correctly with data.table datasets. (#34, #35, h/t Dan Schrage)

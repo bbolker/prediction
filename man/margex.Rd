@@ -21,7 +21,7 @@ A data frame with 3000 observations on the following 11 variables.
  }
 }
 \source{
-\url{http://www.stata-press.com/data/r14/margex.dta}
+\url{https://www.stata-press.com/data/r14/margex.dta}
 }
 \usage{
 data("margex")

@@ -1,5 +1,5 @@
-# @rdname prediction
-# @export
+#' @rdname prediction
+#' @export
 prediction.vglm <- 
 function(model, 
          data = find_data(model, parent.frame()), 

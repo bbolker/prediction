@@ -6,6 +6,7 @@
 \alias{find_data.data.frame}
 \alias{find_data.crch}
 \alias{find_data.glimML}
+\alias{find_data.glimQL}
 \alias{find_data.glm}
 \alias{find_data.hxlr}
 \alias{find_data.lm}
@@ -26,6 +27,8 @@ find_data(model, ...)
 \method{find_data}{crch}(model, env = parent.frame(), ...)
 
 \method{find_data}{glimML}(model, ...)
+
+\method{find_data}{glimQL}(model, env = parent.frame(), ...)
 
 \method{find_data}{glm}(model, env = parent.frame(), ...)
 

@@ -16,7 +16,7 @@
 #'    \item{\samp{agegroup}}{A factor with three levels}
 #'    \item{\samp{arm}}{A factor with three levels}
 #'  }
-#' @source \url{http://www.stata-press.com/data/r14/margex.dta}
+#' @source \url{https://www.stata-press.com/data/r14/margex.dta}
 #' @usage data("margex")
 #' @examples
 #' \donttest{

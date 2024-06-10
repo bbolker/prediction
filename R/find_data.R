@@ -73,6 +73,8 @@ find_data.glimML <- function(model, ...) {
     methods::slot(model, "data")
 }
 
+#' @rdname find_data
+#' @export
 find_data.glimQL <- function(model, env = parent.frame(), ...) {
     requireNamespace("methods", quietly = TRUE)
     methods::slot(model, "fm")$data
