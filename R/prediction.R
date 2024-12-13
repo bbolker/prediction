@@ -104,6 +104,13 @@
 #'     prediction(mod)
 #'     prediction(mod, category = 3)
 #' }
+#'
+#' # standard errors of predictions for GLMs
+#' m1 <- glm(breaks ~ wool * tension, data = warpbreaks, family = poisson)
+#' p1 <- prediction(m1,
+#'      at = with(warpbreaks,
+#'                  list(wool = levels(wool), tension= levels(tension))))
+#' summary(p1)
 #' 
 #' @keywords models
 #' @seealso \code{\link{find_data}}, \code{\link{build_datalist}}, \code{\link{mean_or_mode}}, \code{\link{seq_range}}

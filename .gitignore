@@ -15,3 +15,5 @@ README.html
 /vignettes/figure/
 /vignettes/*.bib.bak
 /revdep/
+\#*
+.#*

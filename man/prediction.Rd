@@ -764,14 +764,20 @@ prediction(x, at = list(Sepal.Length = seq_range(iris$Sepal.Length, 5)))
 prediction(x, at = lapply(iris, mean_or_mode))
 
 # prediction with multi-category outcome
-\dontrun{
-  library("mlogit")
-  data("Fishing", package = "mlogit")
-  Fish <- mlogit.data(Fishing, varying = c(2:9), shape = "wide", choice = "mode")
-  mod <- mlogit(mode ~ price + catch, data = Fish)
-  prediction(mod)
-  prediction(mod, category = 3)
+if (requireNamespace("mlogit")) {
+    data("Fishing", package = "mlogit")
+    Fish <- mlogit.data(Fishing, varying = c(2:9), shape = "wide", choice = "mode")
+    mod <- mlogit(mode ~ price + catch, data = Fish)
+    prediction(mod)
+    prediction(mod, category = 3)
 }
+
+# standard errors of predictions for GLMs
+m1 <- glm(breaks ~ wool * tension, data = warpbreaks, family = poisson)
+p1 <- prediction(m1,
+     at = with(warpbreaks,
+                 list(wool = levels(wool), tension= levels(tension))))
+summary(p1)
 
 }
 \seealso{
