@@ -110,7 +110,8 @@
 #' p1 <- prediction(m1,
 #'      at = with(warpbreaks,
 #'                  list(wool = levels(wool), tension= levels(tension))))
-#' summary(p1)
+#' ss <- summary(p1)
+#' print(ss)
 #' 
 #' @keywords models
 #' @seealso \code{\link{find_data}}, \code{\link{build_datalist}}, \code{\link{mean_or_mode}}, \code{\link{seq_range}}

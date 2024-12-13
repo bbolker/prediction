@@ -777,7 +777,8 @@ m1 <- glm(breaks ~ wool * tension, data = warpbreaks, family = poisson)
 p1 <- prediction(m1,
      at = with(warpbreaks,
                  list(wool = levels(wool), tension= levels(tension))))
-summary(p1)
+ss <- summary(p1)
+print(ss)
 
 }
 \seealso{
